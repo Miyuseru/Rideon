@@ -1,0 +1,90 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    
+}
+
+.head{
+   
+   width: 700px;
+    margin: 0 auto;
+    margin-top: 400px;
+    margin-bottom: 430px;;
+    
+}
+.head img{
+ width: 700px;  
+}
+
+.about{
+    background-color: rgba(243,160,122,0.7);
+    height: 500px;
+}
+.about h1{
+    width: 170px;
+    font-size: 50px;
+    margin: auto;
+    font-family:Futura;
+    font-weight: 2;
+    color: #0b203c;
+}
+.about img{
+  width: 650px;
+    float: left;
+  padding-top: 20px;
+    padding-left: 20px;
+    
+}
+
+.about p{
+   
+    font-size: 20px;
+    border: 2px solid #ed7e41;
+   border-radius: 10px;
+    width: 1500px;
+    margin-top: 150px;
+ margin-left: auto;
+    margin-right: auto;
+}
+.images{
+    height: 1500px;
+}
+.images-1 img{
+    width: 650px;
+    float: right;
+    padding-top: 20px;
+    padding-right: 20px;
+    margin-bottom: 50px;
+}
+
+.seru img{
+      width: 650px;
+    float: left;
+  padding-top: 20px;
+    padding-left: 20px;
+}
+
+.images{
+    width: 1700px;
+    margin: 0 auto;
+    margin-top: 200px;
+    
+}
+.images li{
+    padding-left: 20px;
+      padding-top: 100px;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+.images {
+    opacity : 0;
+    transform : translate(0, 50px);
+    transition : all 300ms;
+}
+.images.scrollin {
+    opacity : 1;
+    transform : translate(0, 0);
+}
