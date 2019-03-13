@@ -5,28 +5,50 @@
 }
 
 .head{
+/*
    
    width: 700px;
     margin: 0 auto;
     margin-top: 400px;
     margin-bottom: 430px;;
+*/
+    background-image: url(image/background.jpg);
+    background-size: cover;
+    background-position: center center;
+    
     
 }
-.head img{
- width: 700px;  
+.logo{
+    
+   width: 700px;
+    margin: 0 ;
+    
+    margin-top: 400px;
+    margin-bottom: 430px;
+    margin-left: 500px;
+    text-align: center;
+   
 }
 
 .about{
     background-color: rgba(243,160,122,0.7);
-    height: 500px;
+    height: 1000px;
 }
 .about h1{
-    width: 170px;
-    font-size: 50px;
-    margin: auto;
-    font-family:Futura;
-    font-weight: 2;
-    color: #0b203c;
+    font-size: 100px;
+    font-family:"HiraMinProN-W6" , sans-serif;
+    font-weight:  1;
+    text-align: center;
+    
+       
+/*
+    border: 2px solid #ed7e41;
+   border-radius: 10px;
+*/
+    width: 1500px;
+    padding-top: 50px;
+ margin-left: auto;
+    margin-right: auto;
 }
 .about img{
   width: 650px;
@@ -37,14 +59,13 @@
 }
 
 .about p{
-   
-    font-size: 20px;
-    border: 2px solid #ed7e41;
-   border-radius: 10px;
-    width: 1500px;
-    margin-top: 150px;
- margin-left: auto;
-    margin-right: auto;
+    padding-top: 20px;
+     font-size: 50px;
+    font-family:"HiraMinProN-W6" , sans-serif;
+    font-weight:  1;
+    text-align: center;
+    
+ 
 }
 .images{
     height: 1500px;
@@ -57,11 +78,47 @@
     margin-bottom: 50px;
 }
 
-.seru img{
+.seru{
+    height: 700px;
+      background-color: rgba(243,160,122,0.7);
+   
+    
+}
+
+.seru p {
+    width: 1000px;
+ margin-left: 20px;
+    margin-top: 50px;
+    border: 5px solid #ed7e41;
+    border-radius: 10px;
+  float: left;
+    
+    font-family: "Hiragino Maru Gothic Pro";
+        font-size: 20px;
+    font-weight: 1;
+/*    text-align: center;*/
+    padding: 20px;
+    line-height: 2;
+    
+}
+.seru p span{
+ 
+    font-size: 50px;
+    text-align: center;
+}
+.seru-image{
       width: 650px;
     float: left;
   padding-top: 20px;
     padding-left: 20px;
+
+    
+}
+.seru-image2{
+    width: 400px;
+    float: right;
+    margin-right: 100px;
+    margin-top: 120px;
 }
 
 .images{
