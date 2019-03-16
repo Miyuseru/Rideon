@@ -10,30 +10,53 @@
 }
 
 .head{
-/*
-   
-   width: 700px;
-    margin: 0 auto;
-    margin-top: 400px;
-    margin-bottom: 430px;;
-*/
-    background-image: url(image/background1.png);
-    background-size: cover;
-    background-position: center center;
-    
-    
+
+padding-left: 100px;
+    background-color:  #ff9c72;
+
 }
 .logo{
-    
+    position: absolute;
    width: 700px;
-    margin: 0 ;
-    
-    margin-top: 400px;
-    margin-bottom: 430px;
-    margin-left: 500px;
+  margin: 400px;
     text-align: center;
-   
+   z-index: 20;
 }
+
+#css-slider {
+	width: 1500px;
+	height: 1000px;
+	overflow: hidden;
+}
+ 
+.slide-item {
+	width: 1500px;
+	height: 1000px;
+	float: left;
+	position: relative;
+}
+ 
+ 
+.slider-wrapper {
+	width: 700%;
+	position: relative;
+	left: 0;
+	will-change: transform;
+	animation: slider 30s infinite;
+}
+ 
+@keyframes slider {
+  0% { transform: translateX(0); }
+  15% { transform: translateX(-1500px); }
+  30% { transform: translateX(-3000px); }
+     45% { transform: translateX(-4500px); }
+     60% { transform: translateX(-6000px); }
+     75% { transform: translateX(-7500px); }
+     90% { transform: translateX(-9000px); }
+  100% { transform: translateX(0); }
+}
+
+
 
 .about{
    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
@@ -217,7 +240,7 @@
 .sa--up .sorami{
     width: 100px;
     position: absolute;
-   top: 50px;
+   top: 55px;
    left: 640px;
 }
 
@@ -233,67 +256,93 @@
 .sa--up .nesuta{
     width: 100px;
     position: absolute;
-   top: 445px;
-   left: 230px;
+   top: 430px;
+   left: 240px;
 }
 
 
 .sa--up .jusan{
     width: 100px;
     position: absolute;
-   top: 475px;
-   left: 685px;
+   top: 465px;
+   left: 705px;
 }
 
 .sa--up .jusan2{
     width: 100px;
     position: absolute;
-   top: 475px;
-   left: 1210px;
+   top: 440px;
+   left: 1190px;
 }
 
 
 .sa--up .torii{
     width: 100px;
     position: absolute;
-   top: 830px;
+   top: 795px;
    left: 310px;
 }
 
 .sa--up .bokujo{
     width: 100px;
     position: absolute;
-   top: 820px;
-   left: 820px;
+   top: 790px;
+   left: 815px;
 }
 
 .sa--up .bokujo2{
     width: 100px;
     position: absolute;
-   top: 830px;
-   left: 1260px;
+   top: 800px;
+   left: 1230px;
 }
 
 .sa--up .jinja{
     width: 100px;
     position: absolute;
-   top: 1220px;
-   left: 245px;
+   top: 1168px;
+   left: 250px;
 }
 
 
 .sa--up .hashi{
     width: 100px;
     position: absolute;
-   top: 1220px;
-   left: 735px;
+   top: 1175px;
+   left: 750px;
 }
 
 .sa--up .hari{
     width: 100px;
     position: absolute;
-   top: 1220px;
-   left: 1235px;
+   top: 1195px;
+   left: 1220px;
 }
 
 
+
+.seru .tfb{
+    font-family: "check";
+color: #ffffff;
+     margin-top: 250px;
+    margin-left: 100px;
+  font-size: 30px;
+    background-color: #ed7e41;
+    border: 5px solid #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    
+    
+}
+
+
+
+.seru .tfb:hover{
+    background-color: #db2a08;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
