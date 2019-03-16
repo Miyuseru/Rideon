@@ -4,6 +4,11 @@
     
 }
 
+@font-face{
+    font-family:"check";
+    src:url("fonts/CP_Revenge.ttf");
+}
+
 .head{
 /*
    
@@ -12,7 +17,7 @@
     margin-top: 400px;
     margin-bottom: 430px;;
 */
-    background-image: url(image/background.jpg);
+    background-image: url(image/background1.png);
     background-size: cover;
     background-position: center center;
     
@@ -117,6 +122,7 @@
  
     font-size: 50px;
     text-align: center;
+    font-family: "check";
 }
 .seru-image{
       width: 650px;
