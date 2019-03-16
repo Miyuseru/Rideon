@@ -1,4 +1,4 @@
-$(function(){
+jQuery(function($){
     $(window).scroll(function (){
         $('.images').each(function(){
             var elemPos = $(this).offset().top;
