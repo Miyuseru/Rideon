@@ -14,6 +14,14 @@
 padding-left: 100px;
     background-color:  #ff9c72;
 
+}@media(max-width:480px){
+    .head{
+        width: 400px;
+        height: 800px;
+        padding: 0;
+     background-color:  #ff9c72;
+   
+    }
 }
 .logo{
     position: absolute;
@@ -21,12 +29,27 @@ padding-left: 100px;
   margin: 400px;
     text-align: center;
    z-index: 20;
+}@media screen and (max-width: 480px){
+    .logo{
+ width:300px;
+  margin-left:  40px;
+    
+       position: absolute;
+    }
 }
 
 #css-slider {
 	width: 1500px;
 	height: 1000px;
 	overflow: hidden;
+}
+@media(max-width:480px){
+    .slide-item {
+	width: 0px;
+	height: 100px;
+	float: left;
+	position: relative;
+}
 }
  
 .slide-item {
@@ -36,13 +59,46 @@ padding-left: 100px;
 	position: relative;
 }
  
+@media(max-width:480px){
+#css-slider {
+	width: 0px;
+	height: 1000px;
+	overflow: hidden;
+}
+}
  
+@media(max-width:480px){
+    @keyframes slider {
+/*
+  0% { transform: translateX(0); }
+  15% { transform: translateX(-480px); }
+  30% { transform: translateX(-960px); }
+     45% { transform: translateX(-1440px); }
+     60% { transform: translateX(-1920px); }
+     75% { transform: translateX(-2400px); }
+     90% { transform: translateX(-2880px); }
+  100% { transform: translateX(0); }
+*/
+}
+
+}
 .slider-wrapper {
 	width: 700%;
 	position: relative;
 	left: 0;
 	will-change: transform;
 	animation: slider 30s infinite;
+}
+@media(max-width:480px){
+ .slider-wrapper {
+/*
+	width: 100%;
+	position: relative;
+	left: 0;
+	will-change: transform;
+	animation: slider 30s infinite;
+*/
+}   
 }
  
 @keyframes slider {
@@ -62,13 +118,17 @@ padding-left: 100px;
    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
     height: 1000px;
 }
+@media(max-width:480px){
+    .about{
+        width:400px;
+        height: 880px;
+    }
+}
 .about h1{
     font-size: 120px;
     font-family:"HiraMinProN-W6" , sans-serif;
     font-weight:  1;
     text-align: center;
-    
-
     width: 1500px;
     padding-top: 50px;
  margin-left: auto;
@@ -85,6 +145,43 @@ padding-left: 100px;
     font-weight:  1;
     text-align: center;
 }
+@media(max-width:480px){
+    .about h1{
+    font-size: 25px;
+    font-family:"HiraMinProN-W6" , sans-serif;
+    font-weight:  1;
+    text-align: center;
+    width: 400px;
+    padding-top: 150px;
+ margin-left: auto;
+    margin-right: auto;
+}
+
+    .about p strong{
+    
+       padding-top: 100px;
+  
+    color: brown;
+     font-size: 80px;
+    font-family:"HiraMinProN-W6" , sans-serif;
+    font-weight:  1;
+    text-align: center;
+}
+
+    @media(max-width:480px){
+            .about p strong{
+    
+       padding-top: 100px;
+  
+    color: brown;
+     font-size: 20px;
+    font-family:"HiraMinProN-W6" , sans-serif;
+    font-weight:  1;
+    text-align: center;
+}
+    }
+    
+}
 .about img{
   width: 650px;
     float: left;
@@ -100,8 +197,19 @@ padding-left: 100px;
     font-weight:  1;
     text-align: center;
     line-height: 2;
-    
  
+}
+@media(max-width:480px){
+    
+.about p{
+    padding-top: 100px;
+     font-size: 10px;
+    font-family:"HiraMinProN-W6" , sans-serif;
+    font-weight:  10;
+    text-align: center;
+    line-height: 4;
+ 
+}
 }
 .images{
     height: 1500px;
@@ -114,11 +222,51 @@ padding-left: 100px;
     margin-bottom: 50px;
 }
 
+@media(max-width:480px){
+   .images-1 img{
+    width: 300px;
+    float: right;
+    padding-top: 20px;
+    padding-right: 10px;
+    margin-bottom: 50px;
+}
+ 
+}
+@media(max-width:480px){
+    .image{
+        width: 480px;
+    }
+    
+}
+
 .seru{
     height: 700px;
       background-color: rgba(243,160,122,0.7);
    
     
+}
+
+.producer img{
+    width:600px;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+@media(max-width:480px){
+    .producer img{ 
+        width:300px;
+        
+   
+  padding-top: 20px;
+    padding-left: 10px;
+
+    }}
+@media(max-width:480px){
+    .seru{
+        width: 400px;
+        height: 1000px;
+    }
+
+
 }
 
 .seru p {
@@ -127,7 +275,7 @@ padding-left: 100px;
     margin-top: 50px;
     border: 5px solid #ed7e41;
     border-radius: 10px;
-  float: left;
+
     
     font-family: "Hiragino Maru Gothic Pro";
         font-size: 20px;
@@ -136,11 +284,35 @@ padding: 20px;
     line-height: 2;
     
 }
+@media(max-width:480px){
+        .seru p {
+    width: 300px;
+ margin-left: 10px;
+    margin-top: 10px;
+    border: 5px solid #ed7e41;
+    border-radius: 10px;
+text-align: center;
+ font-family: "Hiragino Maru Gothic Pro";
+        font-size: 10px;
+    font-weight: 1;
+padding: 20px;
+    line-height: 2;
+    
+}
+}
 .seru p span{
  
     font-size: 50px;
     text-align: center;
     font-family: "check";
+}
+@media(max-width:480px){
+   .seru p span{
+ 
+    font-size: 50px;
+    text-align: center;
+    font-family: "check";
+} 
 }
 .seru-image{
       width: 650px;
@@ -150,11 +322,24 @@ padding: 20px;
 
     
 }
+@media(max-width:480px){
+.seru-image{
+      width: 0px;
+   
+    
+}
+}
 .seru-image2{
     width: 350px;
     float: right;
     margin-right:100px;
     margin-top: 0px;
+}
+@media(max-width:480px){
+   .seru-image2{
+    width: 0px;
+
+} 
 }
 
 .images{
@@ -163,6 +348,15 @@ padding: 20px;
     margin: 0 auto;
     margin-top: 200px;
     
+}
+@media(max-width:480px){
+    .images{
+    width: 400px;
+    height: 1500px;
+    margin: 0 auto;
+    margin-top: 200px;
+    
+}
 }
 .images {
     position: relative;
@@ -175,10 +369,28 @@ padding: 20px;
     
     
 }
+@media(max-width:480px){
+.images{
+    height: 5000px;
+       position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+      padding-top: 100px;
+    display: grid;
+  grid-template-columns:300px ;
+
+    grid-row-gap: 100px;
+    }
+}
 .image{
  background-image: linear-gradient(-60deg, #ff9c72 0%, #ed7e41 100%);
 }
-
+@media(max-width:480px){
+    .image{
+    width:400px;
+    background-image: linear-gradient(-60deg, #ff9c72 0%, #ed7e41 100%);
+}
+}
 .sa {
   opacity: 0;
   transition: all .5s ease;
@@ -226,113 +438,18 @@ padding: 20px;
     
 }
 
-/*
-.sa--up .seijin{
-    width: 100px;
-    position: absolute;
-   top: 90px;
-   left: 155px;
-}
 
-
-.sa--up .sorami{
-    width: 100px;
-    position: absolute;
-   top: 55px;
-   left: 640px;
-}
-
-
-.sa--up .kihune{
-    width: 100px;
-    position: absolute;
-   top: 75px;
-   left: 1235px;
-}
-
-
-.sa--up .nesuta{
-    width: 100px;
-    position: absolute;
-   top: 430px;
-   left: 240px;
-}
-
-
-.sa--up .jusan{
-    width: 100px;
-    position: absolute;
-   top: 465px;
-   left: 705px;
-}
-*/
-
-/*
-.sa--up .jusan2{
-    width: 100px;
-    position: absolute;
-   top: 440px;
-   left: 1190px;
-}
-
-
-.sa--up .torii{
-    width: 100px;
-    position: absolute;
-   top: 795px;
-   left: 310px;
-}
-
-.sa--up .bokujo{
-    width: 100px;
-    position: absolute;
-   top: 790px;
-   left: 815px;
-}
-
-.sa--up .bokujo2{
-    width: 100px;
-    position: absolute;
-   top: 800px;
-   left: 1230px;
-}
-*/
-
-/*
-.sa--up .jinja{
-    width: 100px;
-    position: absolute;
-   top: 1168px;
-   left: 250px;
-}
-
-
-.sa--up .hashi{
-    width: 100px;
-    position: absolute;
-   top: 1175px;
-   left: 750px;
-}
-
-.sa--up .hari{
-    width: 100px;
-    position: absolute;
-   top: 1195px;
-   left: 1220px;
-}
-
-*/
 
 
 .seru .tfb{
     font-family: "check";
 color: #ffffff;
-     margin-top: 250px;
-    margin-left: 0px;
-  font-size: 30px;
+     margin-top: 50px;
+    margin-left: 50px;
+  font-size: 20px;
     background-color: #ed7e41;
     border: 5px solid #ffffff;
-    padding: 20px;
+    padding: 30px;
     border-radius: 20px;
     text-align: center;
     text-decoration: none;
@@ -341,6 +458,35 @@ color: #ffffff;
     
 }
 
+@media(max-width:480px){
+     .seru.tfb{
+        width: 200px;
+    font-family: "check";
+color: #ffffff;
+
+     margin-top: 500px;
+
+  font-size: 15px;
+    background-color: #ed7e41;
+    border: 5px solid #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+     
+      
+}
+}
+
+
+
+.seru .tfb:hover{
+    background-color: #db2a08;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
 
 
 .seru .tfb:hover{
